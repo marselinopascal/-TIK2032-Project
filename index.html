@@ -3,53 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style>
-        /* Style CSS bisa dimasukkan di sini */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, nav, main, footer {
-            padding: 20px;
-            background-color: #f0f0f0;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-        }
-    </style>
+    <title>Website Pascal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+
     <main>
-        <h2>Home</h2>
-        <p>This is my homepage.</p>
+        <section id="home">
+            <h2>Homepage</h2>
+            <p>Hallo semua, selamat datang di blog yang biasa saja</p>
+            <p>Disini anda bisa mencari tau tentang beberapa film rekomendasi</p>
+            <p>Saya sering menonton film semoga terhibur!!!</p>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <article>
+                <h3>Harry Potter</h3>
+                <p><img src="gambar/Harry-potter-films.webp" alt="Harry-potter-films" width="600px" ></p>
+                <p>"Harry Potter" adalah sebuah seri novel fantasi yang ditulis oleh penulis Inggris, J.K. Rowling. 
+                    Cerita ini mengisahkan tentang petualangan seorang anak yatim piatu bernama Harry Potter, yang pada usia sebelas tahun mengetahui bahwa ia adalah seorang penyihir. 
+                    Harry kemudian diterima di Sekolah Sihir Hogwarts, di mana ia belajar tentang sihir, bertemu teman-teman baru, dan menghadapi berbagai tantangan, termasuk melawan penyihir jahat bernama Lord Voldemort. 
+                    Selama perjalanan hidupnya di Hogwarts, Harry menemukan kekuatan persahabatan, keberanian, dan cinta yang memungkinkannya untuk menghadapi takdirnya sebagai "The Chosen One" yang akan mengalahkan Voldemort. 
+                    Seri ini terdiri dari tujuh buku yang masing-masing menggambarkan tahun-tahun Harry di Hogwarts dan pertarungan antara kebaikan dan kejahatan dalam dunia sihir.
+                </p>
+            </article>
+            <article>
+                <h3>Spider-man</h3>
+                <p><img src="gambar/Spiderman_Films_2022.webp" alt="Spiderman_Films_2022" width="600px"></p>
+                <p>"Spider-Man" adalah salah satu karakter pahlawan super paling ikonik dari Marvel Comics. Kisahnya berkisar pada Peter Parker, seorang remaja yang mendapat kekuatan super setelah digigit oleh laba-laba yang telah dimodifikasi secara genetik. Dengan kekuatan super itu, Peter memutuskan untuk menggunakan kemampuannya untuk melindungi New York City dari penjahat dan kejahatan.
+                    Seri "Spider-Man" mencakup berbagai media, termasuk komik, film, serial televisi, dan permainan video. Di dalamnya, kita melihat petualangan Peter Parker sebagai Spider-Man, menghadapi musuh-musuh seperti Green Goblin, Doctor Octopus, Venom, dan banyak lagi.
+                    Selain perjuangan fisik melawan penjahat, cerita Spider-Man juga sering kali menyoroti konflik internal Peter Parker, termasuk tanggung jawabnya sebagai pahlawan super, kesulitannya dalam menjaga identitas rahasianya, dan perjuangannya dalam menjalin hubungan dengan orang-orang terdekatnya.
+                    Secara keseluruhan, seri Spider-Man menawarkan kombinasi aksi, petualangan, dan elemen dramatis yang telah menarik penggemar selama puluhan tahun.</p>
+            </article>
+            <article>
+                <h3>Interstellar</h3>
+                <p><img src="gambar/035663200_1411376070-interstellar_poster3-edit1.webp" alt="035663200_1411376070-interstellar_poster3-edit1" width="600px"></p>
+                <p>"Interstellar" adalah film fiksi ilmiah epik yang disutradarai oleh Christopher Nolan. Film ini mengikuti perjalanan seorang mantan pilot NASA, Cooper, yang bersama dengan sekelompok peneliti berangkat ke luar angkasa dalam misi menyelamatkan umat manusia yang terancam kelaparan di Bumi yang tandus.
+                    Cerita film ini mengeksplorasi konsep-konsep fisika teoretis seperti lubang cacing dan relativitas waktu saat para penjelajah mencoba menemukan planet yang dapat menjadi tempat hunian baru bagi umat manusia. Sementara itu, di Bumi, anak perempuan Cooper, Murph, berusaha memecahkan teka-teki fisika yang mungkin menyelamatkan umat manusia.
+                    "Interstellar" bukan hanya tentang petualangan luar angkasa, tetapi juga tentang hubungan antara seorang ayah dan anaknya, serta tentang daya tahan dan keberanian manusia di hadapan tantangan yang tampaknya mustahil.
+                    Dengan efek visual yang memukau, skor musik yang mengesankan, dan cerita yang mendalam, "Interstellar" telah menjadi salah satu film fiksi ilmiah yang paling dihargai dan dibicarakan dalam beberapa tahun terakhir.
+                    
+                    
+                    
+                    
+                    
+                    
+                    </p>
+            </article>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); grid-gap: 20px; justify-items: center; padding: 20px;">
+                <img src="gambar/gambar_1.JPG" alt="Image 1">
+                <img src="gambar/gambar_2.jpg" alt="Image 2">
+                <img src="gambar/gambar_3.jpg" alt="Image 3">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: marselino8885@gmail.com</p>
+            <p>No Handphone: 085240039748</p>
+        </section>
     </main>
+
     <footer>
         <p>&copy; 2024 My Website. All rights reserved.</p>
     </footer>
+    
 </body>
 </html>
